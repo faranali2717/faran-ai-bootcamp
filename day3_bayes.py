@@ -83,6 +83,4 @@ print("   - Probability = 2/52 = 1/26 ≈ 3.85%")
 print(f"| Bayes Theorem (Disease) | {p_disease_given_pos * 100:.1f}% chance of having virus |")
 print(f"| Red King Probability | 1/26 = {percentage:.2f}% |")
 
-print("\n" + "=" * 60)
-print("✅ DAY 3 COMPLETE! Both Probability Problems Solved.")
-print("=" * 60)
+
