@@ -1,6 +1,6 @@
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # Suppresses TensorFlow INFO and WARNING logs
-os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'  # Optional: turns off oneDNN optimization warnings
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'  
 
 import numpy as np
 import matplotlib.pyplot as plt
