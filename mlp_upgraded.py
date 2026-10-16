@@ -143,7 +143,7 @@ for epoch in range(epochs):
 a2_final_test, _ = forward_pass(x_test, w1, b1, w2, b2)
 final_test_acc = compute_accuracy(a2_final_test, y_test_raw) * 100
 
-print(f'\nfinal testing accuracy on unseen test set: {final_test_acc:.2f}%')
+
 
 # ploting  results
 plt.figure(figsize=(8, 5))
@@ -156,3 +156,15 @@ plt.ylabel('categorical cross-entropy loss')
 plt.grid(True)
 plt.tight_layout()
 plt.show()
+
+import os
+
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+np.save(os.path.join(script_dir, 'w1.npy'), w1)
+np.save(os.path.join(script_dir, 'b1.npy'), b1)
+np.save(os.path.join(script_dir, 'w2.npy'), w2)
+np.save(os.path.join(script_dir, 'b2.npy'), b2)
+
+print(f'Weights successfully saved at: {script_dir}')
